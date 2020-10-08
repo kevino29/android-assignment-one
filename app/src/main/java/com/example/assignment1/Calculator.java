@@ -60,7 +60,7 @@ public class Calculator {
         }
     }
 
-    class OperatorButtonClicked implements View.OnClickListener {
+    private class OperatorButtonClicked implements View.OnClickListener {
         private String oper;
 
         public OperatorButtonClicked(String oper) {
@@ -96,7 +96,7 @@ public class Calculator {
         }
     }
 
-    class SpecialButtonClicked implements View.OnClickListener {
+    private class SpecialButtonClicked implements View.OnClickListener {
         private String button;
 
         public SpecialButtonClicked(String button) {
@@ -203,7 +203,7 @@ public class Calculator {
         }
     }
 
-    class NumberButtonClicked implements View.OnClickListener {
+    private class NumberButtonClicked implements View.OnClickListener {
         private int number;
 
         public NumberButtonClicked(int number) {
@@ -390,7 +390,7 @@ public class Calculator {
 
     }
 
-    public double add(String addends1, String addends2) {
+    private double add(String addends1, String addends2) {
         double sum = 0.0;
 
         try {
@@ -405,7 +405,7 @@ public class Calculator {
         return sum;
     }
 
-    public double subtract(String minuend, String subtrahend) {
+    private double subtract(String minuend, String subtrahend) {
         double difference = 0.0;
 
         try {
@@ -419,7 +419,7 @@ public class Calculator {
         return difference;
     }
 
-    public double multiply(String multiplicand, String multiplier) {
+    private double multiply(String multiplicand, String multiplier) {
         double product = 0.0;
 
         try {
@@ -433,7 +433,7 @@ public class Calculator {
         return product;
     }
 
-    public double divide(String dividend, String divisor) {
+    private double divide(String dividend, String divisor) {
         double quotient = 0.0;
 
         try {
@@ -447,7 +447,7 @@ public class Calculator {
         return quotient;
     }
 
-    public double calculate(String number1, String number2, String operator) {
+    private double calculate(String number1, String number2, String operator) {
         double result = 0.0;
 
         switch (operator) {
@@ -534,5 +534,4 @@ public class Calculator {
             textViewDisplay.setText(display);
         }
     }
-
 }
