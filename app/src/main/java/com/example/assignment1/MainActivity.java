@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewDisplay = (TextView)findViewById(R.id.textViewDisplay);
+        textViewDisplay = findViewById(R.id.textViewDisplay);
 
         for (int i = 0; i < 4; i++) {
             switch (i) {
